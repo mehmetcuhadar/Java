@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Test #0",
+      "setup": "javac *.java",
+      "run": "java -cp . HW1_test",
+      "input": "",
+      "output": "11\r\n15\r\n20\r\n47\r\n41\r\n55\r\n56\r\n72\r\n80\r\n88",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}

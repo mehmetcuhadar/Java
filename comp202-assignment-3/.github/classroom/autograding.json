@@ -1,0 +1,64 @@
+{
+  "tests": [
+    {
+      "name": "Test#0",
+      "setup": "javac *.java",
+      "run": "java -cp . HW3_Test",
+      "input": "75 72 85 47 82 89 49 80 88 93 74 end 75 72 85 47 82 89 49 80 88 93 74 end 0 end",
+      "output": "true\r\ntrue\r\n47 49 72 74 75 80 82 85 88 89 93 ",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test#1",
+      "setup": "javac *.java",
+      "run": "java -cp . HW3_Test",
+      "input": "75 72 85 47 82 89 49 80 88 93 74 end 75 72 85 47 89 49 80 88 93 74 end 0 end",
+      "output": "true\r\nfalse\r\n47 49 72 74 75 80 82 85 88 89 93 ",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test#2",
+      "setup": "javac *.java",
+      "run": "java -cp . HW3_Test",
+      "input": "75 72 85 47 82 89 49 80 88 93 74 end 75 72 85 47 82 89 59 80 88 93 74 end 89 end",
+      "output": "true\r\nfalse\r\n47 49 72 74 75 80 82 85 88 93 ",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test#3",
+      "setup": "javac *.java",
+      "run": "java -cp . HW3_Test",
+      "input": "41 20 11 29 32 65 91 50 52 72 99 end 41 20 11 29 32 65 91 50 52 72 99 11 end 65 end",
+      "output": "true\r\ntrue\r\n11 20 29 32 41 50 52 72 91 99 ",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test#4",
+      "setup": "javac *.java",
+      "run": "java -cp . HW3_Test",
+      "input": "41 20 29 32 65 91 50 52 72 99 end 41 20 29 32 65 91 50 52 72 99 end 32 end",
+      "output": "false\r\ntrue\r\n20 29 41 50 52 65 72 91 99 ",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": null
+    },
+    {
+      "name": "Test#5",
+      "setup": "javac *.java",
+      "run": "java -cp . HW3_Test",
+      "input": "41 20 29 32 65 91 50 52 72 99 end 41 20 29 32 65 91 50 52 72 99 end 72 end",
+      "output": "false\r\ntrue\r\n20 29 32 41 50 52 65 91 99 ",
+      "comparison": "exact",
+      "timeout": 5,
+      "points": null
+    }
+  ]
+}

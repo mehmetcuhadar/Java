@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Part2Test",
+      "setup": "javac *.java",
+      "run": "java -cp . HW4Part2Test",
+      "input": "ibm.com yahoo.com 20 33\r\nyahoo.com ucsd.edu 19 40\r\nucsd.edu ibm.com 10 17\r\nyahoo.com fsf.org 5 10\r\nend\r\ngoogle.com yahoo.com 30 43\r\nyahoo.com youtube.com 39 50\r\ngoogle.com youtube.com 2 11\r\nyahoo.com ibm.com 10 17\r\nyahoo.com fsf.org 5 10\r\nibm.com nvidia.com 13 23\r\nnvidia.com fsf.org 14 11\r\nend\r\ngoogle.com youtube.com 2 5\r\ngoogle.com ibm.com 3 11\r\nibm.com youtube.com 11 13\r\nend",
+      "output": "386\r\n482\r\n96\r\n1176\r\n1400\r\n224\r\n58\r\n64\r\n6",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
